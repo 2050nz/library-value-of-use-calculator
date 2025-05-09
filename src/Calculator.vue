@@ -78,7 +78,7 @@ const reset = () => {
 
 </template>
 
-<style scoped>
+<style>
 .calculator-table {
     width: 100%;
     border-collapse: collapse;
