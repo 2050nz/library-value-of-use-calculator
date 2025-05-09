@@ -4,10 +4,14 @@ This tool allows your end users to calculate the  value of their regular library
 
 # How to Use
 
-Download the library-calculator.js file and link to it in your template.
+Download the **dist/calculator.js** file and link to it in your template.
 
-add the following html element to the page you want the calculator to show
-`<div id="library-usage-calculator"></div>`
+`<script src="/path/to/calculator.js"/>`
+
+You can also include the basic styles by downloading **dist/calculator.css**
+
+`<link rel="stylesheet" href="/path/to/calculator.css">`
+
 
 To configure the headings and rows you can modify the following example and 
 add it to your template in the `<head>` section of your template.
@@ -78,6 +82,10 @@ window.calculatorConfig = {
 }
 </script>
 ```
+Finally, add the following html element to the page you want the calculator to show
+
+`<div id="library-usage-calculator"></div>`
+
 #Styling
 
 Only basic styling has been applied so that you can easily customise
