@@ -81,10 +81,21 @@ window.calculatorConfig = {
     ]
 }
 </script>
+
+
 ```
+*Alternatively, if you want to keep this configuration in a separate file you
+can provide the path to this file to the calculator using a `data-config` property
+
+
+
 Finally, add the following html element to the page you want the calculator to show
 
 `<div id="library-usage-calculator"></div>`
+
+or with optional `data-config`
+
+`<div id="library-usage-calculator" data-config="/path/to/your/config.json"></div>`
 
 #Styling
 
