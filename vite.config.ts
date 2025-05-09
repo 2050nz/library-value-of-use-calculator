@@ -15,4 +15,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'calculator.js',
+        chunkFileNames: 'calculator.js',
+        assetFileNames: 'calculator.css',
+      },
+    },
+  },
 })
