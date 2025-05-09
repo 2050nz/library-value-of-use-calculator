@@ -12,11 +12,13 @@ declare global {
         };
     }
 }
-// Use ref for the config object
 const config = ref<configType>({
     headings: [],
     items: []
 });
+const totals: number[] = reactive([]);
+const lineValues: number[] = reactive([]);
+
 if (window.calculatorConfig && window.calculatorConfig.headings && window.calculatorConfig.items) {
     config.value.items = window.calculatorConfig.items;
     config.value.headings = window.calculatorConfig.headings;
@@ -27,15 +29,14 @@ else {
     fetch(configPath)
         .then((response) => response.json())
         .then((data) => {
-            config.value.headings = data.headings; // Update properties reactively
+            config.value.headings = data.headings;
             config.value.items = data.items;
         })
         .catch((error) => {
             console.error('Error fetching config:', error);
         });
 }
-const totals: number[] = reactive([]); // Use reactive for reactivity
-const lineValues: number[] = reactive([]); // Use reactive for reactivity
+
 
 const grandTotal = computed(() => {
     return totals.reduce((acc, total) => acc + total, 0).toLocaleString('en-US', {

@@ -7,9 +7,9 @@ const props = defineProps({
         required: true
     }
 })
-//this sets up the model for the v-model binding
-//so the parent can use v-model to bind to this
-//and the child can use the model to bind to the input
+const emit = defineEmits(['line-total-updated']);
+
+
 const model = defineModel<number | null>({
     default: null
 });
@@ -20,10 +20,6 @@ const lineTotal = computed(() => {
     return model.value * props.item.cost;
 });
 
-const emit = defineEmits(['line-total-updated']);
-watch(lineTotal, (newTotal) => {
-    emit('line-total-updated', newTotal);
-});
 
 const fmt = (value: number) => {
     return value.toLocaleString('en-US', {
@@ -45,7 +41,9 @@ const checkInput = (item: LineItem, event: Event) => {
         model.value = 9999;
     }
 };
-
+watch(lineTotal, (newTotal) => {
+    emit('line-total-updated', newTotal);
+});
 </script>
 <template>
     <tr class="calculator-line-item-row">
