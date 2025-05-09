@@ -1,0 +1,65 @@
+{
+    "headings": [
+        "Input Your Use",
+        "Library Services",
+        "Value of Use"
+    ],
+    "items": [
+        {
+            "label": "Books Borrowed",
+            "cost": 27.7
+        },
+        {
+            "label": "Audiobooks Borrowed",
+            "cost": 84.84
+        },
+        {
+            "label": "eBooks/Audiobooks Downloaded",
+            "cost": 43.15
+        },
+        {
+            "label": "Magazines or Newspapers Borrowed",
+            "cost": 7.75
+        },
+        {
+            "label": "DVDs Borrowed",
+            "cost": 25.15
+        },
+        {
+            "label": "CDs Borrowed",
+            "cost": 25.15
+        },
+        {
+            "label": "Databases or Articles Accessed",
+            "cost": 24
+        },
+        {
+            "label": "Streaming Movies or Learning Videos Viewed",
+            "cost": 20
+        },
+        {
+            "label": "Meeting Room Use (hours per month)",
+            "cost": 50
+        },
+        {
+            "label": "Programmes or Classes Attended",
+            "cost": 20
+        },
+        {
+            "label": "Computer Use (hours per month)",
+            "cost": 5
+        },
+        {
+            "label": " Questions Answered",
+            "cost": 10
+        },
+        {
+            "label": "Digital Help Sessions",
+            "cost": 150
+        },
+        {
+            "label": "Blueprint Equipment Use (hours per month)",
+            "cost": 123
+        }
+    ]
+}
