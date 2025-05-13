@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type LineItem from '@/types/LineItem';
-import { computed, defineModel, watch } from 'vue';
+import { computed,  watch } from 'vue';
 const props = defineProps({
     item: {
         type: Object as () => LineItem,
