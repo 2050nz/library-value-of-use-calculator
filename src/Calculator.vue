@@ -83,20 +83,25 @@ const reset = () => {
 .calculator-table {
     width: 100%;
     border-collapse: collapse;
-    
+    table-layout: auto;
+
 }
 
 .calculator-table th,
 .calculator-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem;
 }
 
 .calculator-table th {
     background-color: #f2f2f2;
     text-align: left;
     font-weight: bold;
-    padding: 8px;
+    border-width: 0 0 1px 0;
+    font-weight: 700;
+    color: #343a40;
+    background: #f8f9fa;
+    transition: box-shadow 0.2s;
 }
 
 
@@ -104,14 +109,42 @@ const reset = () => {
 .calculator-table input[type="number"] {
     width: 100%;
     box-sizing: border-box;
+    font-size: 1rem;
+    color: #495057;
+    background: #ffffff;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
 }
 
 .calculator-table input[type="number"]:focus {
-    outline: none;
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #BFDBFE;
+    border-color: #3B82F6;
 }
+
 .calculator-grand-total-row {
     font-weight: bold;
     background-color: #f9f9f9;
-    
+}
+
+.calculator-reset-button {
+    color: #ffffff;
+    background: #3B82F6;
+    border: 1px solid #3B82F6;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.calculator-reset-button:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
 }
 </style>
