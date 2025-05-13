@@ -107,4 +107,5 @@ the calculator to suit the theme of your website. The following class names are 
 .calculator-heading-row /*the heading <tr> has this class*/
 .calculator-line-item-row /*each line item <tr> has this class*/
 .calculator-reset-button /*the button which resets the input values*/
+.calculator-grand-total-row /*the tr showing the grand total*/
 ```

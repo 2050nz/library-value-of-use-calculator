@@ -63,7 +63,7 @@ const reset = () => {
         <tbody>
             <TableRow v-for="(item, index) in config.items" :key="index" @line-total-updated="totals[index] = $event"
                 :item="item" v-model="lineValues[index]" />
-            <tr>
+            <tr class="calculator-grand-total-row">
                 <td colspan="2">Grand Total</td>
                 <td>{{ grandTotal }}</td>
             </tr>
@@ -83,16 +83,20 @@ const reset = () => {
 .calculator-table {
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 .calculator-table th,
 .calculator-table td {
     border: 1px solid #ddd;
+    padding: 8px;
 }
 
 .calculator-table th {
     background-color: #f2f2f2;
     text-align: left;
+    font-weight: bold;
+    padding: 8px;
 }
 
 
@@ -104,5 +108,10 @@ const reset = () => {
 
 .calculator-table input[type="number"]:focus {
     outline: none;
+}
+.calculator-grand-total-row {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    
 }
 </style>
