@@ -2,6 +2,10 @@
 
 This tool allows your end users to calculate the  value of their regular library use.
 
+# Demo
+
+https://citylibrary.pncc.govt.nz/calculator
+
 # How to Use
 
 Download the **dist/calculator.js** file and link to it in your template.
