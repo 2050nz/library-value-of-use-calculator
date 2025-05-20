@@ -2,7 +2,7 @@
 
 This tool allows your end users to calculate the  value of their regular library use.
 
-We built this to go onto the Palmerston North City Library website. Who had borrowed the 'value of library service' idea from Denver Public Library https://www.denverlibrary.org/content/library-value-calculator and Maine State Library's Library Use Value Calculator http://www.maine.gov/msl/services/calculator.htm. For more information, see their explanation. We developed our own figures based on the New Zealand context. View more information on how these figures were calculated https://citylibrary.pncc.govt.nz/explore/faq/how-is-the-city-library-use-value-calculated.
+We built this to go onto the Palmerston North City Library website. They had borrowed the 'value of library service' idea from Denver Public Library https://www.denverlibrary.org/content/library-value-calculator and Maine State Library's Library Use Value Calculator http://www.maine.gov/msl/services/calculator.htm. For more information, see their explanation. We developed our own figures based on the New Zealand context. View more information on how these figures were calculated https://citylibrary.pncc.govt.nz/explore/faq/how-is-the-city-library-use-value-calculated.
 
 # Demo
 
